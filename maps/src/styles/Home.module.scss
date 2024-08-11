@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.4rem;
+
+    p {
+      padding: 0.2rem;
+      font-size: 2rem;
+      font-family: var(--font-mono);
+    }
+
+    .icon {
+      font-size: 2rem;
+    }
+  }
+
+  input {
+    padding: 0.2rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    border-radius: 4px;
+    width: 300px;
+  }
+
+  #search-field {
+    width: 100%;
+  }
+
+  .map {
+    margin-top: 2rem;
+  }
+}

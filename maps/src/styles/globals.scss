@@ -1,0 +1,48 @@
+:root {
+  --font-mono: "Roboto Mono", monospace;
+
+  --foreground-rgb: 188, 149, 81;
+  --background-light-rgb: 255, 255, 255;
+  --background-dark-rgb: 71, 93, 113;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: radial-gradient(
+    circle at center,
+    rgba(var(--background-light-rgb), 1) 0%,
+    rgba(var(--background-light-rgb), 0.8) 30%,
+    rgba(var(--background-light-rgb), 0.6) 50%,
+    rgba(var(--background-light-rgb), 0.4) 70%,
+    rgba(var(--background-dark-rgb), 1) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: var(--font-mono);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+  background-color: var(--background-light-rgb);
+  color: rgb(var(--foreground-rgb));
+  border: 1.3px solid rgb(var(--background-dark-rgb));
+}
